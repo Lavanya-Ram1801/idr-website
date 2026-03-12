@@ -6,10 +6,6 @@ font-family:'Poppins', sans-serif;
 scroll-behavior:smooth;
 }
 
-body{
-background:linear-gradient(135deg,#0f172a,#1e293b);
-color:white;
-}
 
 /* Navbar */
 
@@ -54,7 +50,7 @@ color:#ff7a18;
 /* Hero Section */
 
 .hero{
-height:100vh;
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -372,4 +368,5 @@ margin-bottom:10px;
 .footer p{
 opacity:0.8;
 margin-top:5px;
+
 }
