@@ -184,12 +184,16 @@ to collaborate on digital risk innovation.
 
 </footer>
 <script>
-window.addEventListener("load", function(){
-  document.getElementById("loader").style.display = "none";
-});
+window.onload = function() {
+  var loader = document.getElementById("loader");
+  if(loader){
+    loader.style.display = "none";
+  }
+};
 </script>
 </body>
 </html>
+
 
 
 
