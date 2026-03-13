@@ -18,27 +18,28 @@ background:rgba(255,255,255,0.05);
 border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
+@media(max-width:768px){
+
 .navbar{
-display:flex;
+flex-direction:row;
 justify-content:space-between;
-align-items:center;
-padding:18px 10%;
 }
 
 .nav-links{
-display:flex;
-list-style:none;
-gap:30px;
+flex-direction:column;
+position:absolute;
+top:70px;
+right:20px;
+background:rgba(0,0,0,0.8);
+padding:20px;
+border-radius:10px;
+display:none;
 }
 
-.nav-links a{
-text-decoration:none;
-color:white;
-transition:0.3s;
+.nav-links li{
+margin:10px 0;
 }
 
-.nav-links a:hover{
-color:#ff7a18;
 }
 
 /* Hero Section */
@@ -89,6 +90,11 @@ padding:120px 10%;
 text-align:center;
 }
 
+@media(max-width:768px){
+.section{
+padding:80px 20px;
+}
+}
 .section h2{
 font-size:32px;
 margin-bottom:20px;
@@ -103,6 +109,18 @@ gap:30px;
 margin-top:40px;
 flex-wrap:wrap;
 justify-content:center;
+}
+@media(max-width:768px){
+
+.cards{
+flex-direction:column;
+gap:20px;
+}
+
+.card{
+width:90%;
+}
+
 }
 
 .card{
@@ -129,6 +147,18 @@ gap:15px;
 max-width:400px;
 margin:auto;
 margin-top:30px;
+}
+@media(max-width:768px){
+
+.contact-form{
+width:100%;
+padding:0 10px;
+}
+
+input,textarea{
+width:100%;
+}
+
 }
 
 input,textarea{
@@ -270,6 +300,26 @@ transform:rotateX(360deg) rotateY(360deg);
 }
 
 }
+@media(max-width:768px){
+
+.cube{
+width:90px;
+height:90px;
+}
+
+.face{
+width:90px;
+height:90px;
+}
+
+.front{transform:translateZ(45px);}
+.back{transform:rotateY(180deg) translateZ(45px);}
+.right{transform:rotateY(90deg) translateZ(45px);}
+.left{transform:rotateY(-90deg) translateZ(45px);}
+.top{transform:rotateX(90deg) translateZ(45px);}
+.bottom{transform:rotateX(-90deg) translateZ(45px);}
+
+}
 #loader{
 position:fixed;
 width:100%;
@@ -297,7 +347,7 @@ animation:spin 1s linear infinite;
 body{
 background:linear-gradient(-45deg,#020617,#1e293b,#0f172a,#1e293b);
 background-size:400% 400%;
-animation:gradientBG 15s ease infinite;
+animation:gradientBG 20s ease infinite;
 color:white;
 }
 
@@ -358,4 +408,5 @@ opacity:0.8;
 margin-top:5px;
 
 }
+
 
